@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: black !important;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;   
+}
+
+#banner {
+    position: relative;
+    /* background-image: linear-gradient(to right, #536DFE, #536df4); */
+    /* color: #fff; */
+    padding-top: 5%;
+}
+
+.title {
+    font-weight: bolder;
+    margin-top: 80px;
+}
+
+.ban-img {
+    position: relative;
+    z-index: 1000;
+}
+
+.wave{
+    position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+/* Service */
+#services {
+    padding: 30px 0;
+}
+
+.services {
+    padding: 20px;
+}
+
+.services img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.services h4{
+    padding: 5px;
+    margin-top: 25px;
+}
+
+/* project */
+#project {
+    padding: 30px 0;
+    background: #f8f9fa;
+}
+
+#project h3{
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+
+
+/* history */
+#history {
+    padding: 70px 0;
+}
+
+.ban-iframe {
+    position: relative;
+    z-index: 1000;
+}
+
+/* Client */
+#client {
+    padding: 30px 0;
+}
+
+.client img{
+    width: 159px;
+    height: 80px;
+    margin-top: 10px;
+}
+
