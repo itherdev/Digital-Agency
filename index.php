@@ -18,9 +18,9 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light  ">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark  ">
         <div class="container">
-            <div class="logo">
+            <div class="logo page-scroll">
                 <a href="#">
                     <img src="assets/img/logo.png" alt="" height="50px">
                 </a>
@@ -30,27 +30,27 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+                <ul class="nav navbar-nav ml-auto mt-2 mt-md-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.php" class="page-scroll">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">We Do</a>
+                        <a class="nav-link" href="#services" class="page-scroll">We Do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#" class="page-scroll">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Project</a>
+                        <a class="nav-link" href="#" class="page-scroll">Project</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.php">Pricing</a>
+                        <a class="nav-link" href="pricing.php" class="page-scroll">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#blog.php" class="page-scroll">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact" class="page-scroll">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -80,6 +80,10 @@
             </div>
         </div>
 
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1" d="M0,256L48,266.7C96,277,192,299,288,266.7C384,235,480,149,576,106.7C672,64,768,64,864,80C960,96,1056,128,1152,122.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+
         <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#5000ca" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,176C480,149,600,75,720,42.7C840,11,960,21,1080,48C1200,75,1320,117,1380,138.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
         </svg> -->
@@ -88,7 +92,7 @@
 
 
     <!-- Service -->
-    <section id="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 services">
@@ -145,7 +149,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-8 mt-3 offset-2 embed-responsive embed-responsive-16by9">
+                <div class="col-md-7 mt-3 offset-2 embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item  " src="https://www.youtube.com/embed/wenddkRxiSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -219,13 +223,31 @@
     </section>
     <!-- Project -->
 
-    <!-- Bagian akhir -->
-    <section id="footer">
+    <!-- Contact Us -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <span>Let's Talk</span>
+                    <h3 class="contact">Do YOu Have Any Project ?</h3>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="btn btn-primary btn-md shadow p-1 mt-4  mb-5 rounded ">
+                        Contact us More <i class="far fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us -->
+
+    <!--end footer -->
+    <section id="footer" class="footer">
         <div class="container">
             <footer>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="assets/img/logo.png" alt="" class="img-fluid">
+                        <img src="assets/img/logo.png" alt="" class="img-fluid footer" height="50px">
                         <small class="d-block mb-3 text-muted">&copy; 2017-2021</small>
                     </div>
                     <div class="col-md-2">
@@ -258,52 +280,17 @@
                     </div>
                 </div>
             </footer>
-            <!-- <footer class="pt-5 my-md-5 pt-md-5 border-top">
-                <div class="row">
-                    <div class="col-12 col-md">
-                        <img class="mb-2" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-                        <small class="d-block mb-3 text-muted">&copy; 2017-2021</small>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Features</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="link-secondary" href="#">Cool stuff</a></li>
-                            <li><a class="link-secondary" href="#">Random feature</a></li>
-                            <li><a class="link-secondary" href="#">Team feature</a></li>
-                            <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-                            <li><a class="link-secondary" href="#">Another one</a></li>
-                            <li><a class="link-secondary" href="#">Last time</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>Resources</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="link-secondary" href="#">Resource</a></li>
-                            <li><a class="link-secondary" href="#">Resource name</a></li>
-                            <li><a class="link-secondary" href="#">Another resource</a></li>
-                            <li><a class="link-secondary" href="#">Final resource</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md">
-                        <h5>About</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="link-secondary" href="#">Team</a></li>
-                            <li><a class="link-secondary" href="#">Locations</a></li>
-                            <li><a class="link-secondary" href="#">Privacy</a></li>
-                            <li><a class="link-secondary" href="#">Terms</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer> -->
         </div>
+
     </section>
-    <!-- /Bagian Akhir -->
+    <!-- end footer -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src=""></script>
 </body>
 
 </html>
